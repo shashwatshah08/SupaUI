@@ -12,7 +12,7 @@ export default async function LoginForm1() {
             Sign in to your account
           </h1>
           <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Link
               className="font-medium text-indigo-600 hover:underline dark:text-indigo-400"
               href="#"
