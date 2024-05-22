@@ -67,7 +67,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 
-export default async function LoginForm1() {
+export default function LoginForm1() {
   return (
     <div className="flex h-screen w-full items-center justify-center bg-gray-100 px-4 dark:bg-gray-950">
       <div className="w-full max-w-md space-y-6">
