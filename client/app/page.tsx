@@ -24,11 +24,11 @@ export default async function Component() {
                 responsive, and easy to integrate into your projects.
               </p>
               <p className="mt-4">
-                Whether you're building a web application, a marketing site, or
-                a mobile-first experience, SupaUI Components has the tools you
-                need to create a stunning user interface. Our components are
-                designed with best practices in mind, ensuring your users have a
-                seamless and delightful experience.
+                Whether you&apos;re building a web application, a marketing
+                site, or a mobile-first experience, SupaUI Components has the
+                tools you need to create a stunning user interface. Our
+                components are designed with best practices in mind, ensuring
+                your users have a seamless and delightful experience.
               </p>
             </div>
           </section>
@@ -38,7 +38,7 @@ export default async function Component() {
             </h2>
             <div className="mt-4 text-gray-500 dark:text-gray-400 text-base md:text-lg leading-relaxed">
               <p>
-                To use SupaUI Components, you'll need to have the following
+                To use SupaUI Components, you&apos;ll need to have the following
                 dependencies installed in your project:{" "}
                 <strong className="">React, Tailwind CSS, shadcn/ui</strong> and{" "}
                 <strong>React Icons</strong>
