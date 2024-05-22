@@ -4,6 +4,8 @@ import "./globals.css";
 import { SVGProps } from "react";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,36 +22,35 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} h-screen`}>
-        <div className="grid min-h-screen w-full overflow-hidden lg:grid-cols-[280px_1fr]">
-          <div className="hidden border-r bg-gray-100/40 lg:block dark:bg-gray-800/40">
-            <div className="flex flex-col gap-2">
-              <div className="flex h-[60px] items-center px-6">
-                <Link
-                  className="flex items-center gap-2 font-semibold"
-                  href="/"
-                >
-                  <Package2Icon className="h-6 w-6" />
-                  <span className="">SupaUI</span>
-                </Link>
-              </div>
-              <div className="flex-1">
-                <nav className="grid items-start px-4 text-sm font-medium">
-                  <Link
-                    className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-900 transition-all hover:text-gray-900 dark:bg-gray-800 dark:text-gray-50 dark:hover:text-gray-50"
-                    href="/loginForm"
-                  >
-                    Login Form
-                  </Link>
-                </nav>
-              </div>
-            </div>
-          </div>
+        <div className="min-h-screen w-full overflow-hidden lg:grid-cols-[280px_1fr]">
           <div className="flex flex-col h-screen overflow-y-hidden">
             <header className="flex h-14 lg:h-[60px] items-center gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40">
-              <Link className="lg:hidden" href="#">
-                <Package2Icon className="h-6 w-6" />
-                <span className="sr-only">Home</span>
-              </Link>
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="outline">Components</Button>
+                </SheetTrigger>
+                <SheetContent side={"left"}>
+                  <div className="flex h-[60px] items-center px-6">
+                    <Link
+                      className="flex items-center gap-2 font-semibold"
+                      href="/"
+                    >
+                      <Package2Icon className="h-6 w-6" />
+                      <span className="">SupaUI</span>
+                    </Link>
+                  </div>
+                  <div className="flex-1">
+                    <nav className="grid items-start px-4 text-sm font-medium">
+                      <Link
+                        className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-900 transition-all hover:text-gray-900 dark:bg-gray-800 dark:text-gray-50 dark:hover:text-gray-50"
+                        href="/loginForm"
+                      >
+                        Login Form
+                      </Link>
+                    </nav>
+                  </div>
+                </SheetContent>
+              </Sheet>
               <div className="flex flex-1 items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
                 <form className="ml-auto flex-1 sm:flex-initial">
                   <div className="relative">
