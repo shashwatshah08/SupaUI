@@ -5,13 +5,13 @@ import LoginForm2, { loginForm2CodeString } from "./loginForm2";
 export default function LoginForm() {
   return (
     <div className="flex flex-col space-y-10">
-      <div className="h-screen overflow-auto">
+      <div className="h-[80vh] overflow-auto">
         <ResizableComponentPanel
           component={LoginForm1}
           codeString={loginForm1CodeString}
         />
       </div>
-      <div className="h-screen overflow-auto">
+      <div className="h-[80vh] overflow-auto">
         <ResizableComponentPanel
           component={LoginForm2}
           codeString={loginForm2CodeString}
