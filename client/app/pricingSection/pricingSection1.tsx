@@ -50,7 +50,7 @@ const plans = [
 
 export default function PricingSection1() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800 overflow-hidden">
+    <div className="w-full h-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
       <div className="container px-4 md:px-6">
         <Tabs className="w-full max-w-4xl mx-auto" defaultValue="starter">
           <TabsList className="grid grid-cols-3 gap-4">
@@ -91,7 +91,7 @@ export default function PricingSection1() {
           ))}
         </Tabs>
       </div>
-    </section>
+    </div>
   );
 }
 
