@@ -21,9 +21,6 @@ function ResizableComponentPanel({
     >
       <ResizablePanel defaultSize={100}>
         <div className="h-full flex flex-col gap-4 overflow-y-auto p-4">
-          <div className="grid gap-2">
-            <h2 className="text-2xl font-bold">Component</h2>
-          </div>
           <Component />
         </div>
       </ResizablePanel>

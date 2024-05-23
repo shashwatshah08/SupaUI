@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} h-screen`}>
+      <body className={`${inter.className} h-screen overflow-hidden`}>
         <div className="min-h-screen w-full overflow-hidden lg:grid-cols-[280px_1fr]">
           <div className="flex flex-col h-screen overflow-y-hidden">
             <header className="flex h-14 lg:h-[60px] items-center gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40">
